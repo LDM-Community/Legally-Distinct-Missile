@@ -170,6 +170,9 @@ namespace Rocket.Unturned.Chat
         {
             Say(CSteamID, message, color, false);
         }
+        
+        [Obsolete("Use WrapMessage")]
+        public static List<string> wrapMessage(string text) => wrapMessage(text);
 
          public static List<string> WrapMessage(string text)
          {
